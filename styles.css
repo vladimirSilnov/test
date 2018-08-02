@@ -18,39 +18,49 @@ body {
 	height: 115px;
 	width: 1335px;
 	display: grid;
-	grid-template-columns: repeat(3, auto);
+	grid-template-columns: 117.5px 550px 225px 225px 117.5px;
 	grid-template-rows: 100%;
 }
 .header__logo {
+	grid-area: 1 / 2 / 1 / 3;
 	display: grid;
 	grid-template-columns: 100%;
-	grid-template-rows: repeat(5, 20%);
+	grid-template-rows: repeat(10, 11.5px);
 }
-.header__logo .pic {
+.logo__pic {
 	width: 210px;
 	height; 70px;
 	background-image: url(../img/logo.png);
-	grid-area: 1 / 1 / 4 / 1;
+	background-repeat: no-repeat;
+	grid-area: 1 / 1 / 7 / 1;
 }
-.header__logo .slogan {
-	grid-area: 4 / 1 / 5 / 1;
+.logo__text {
+	font-size: 14px;
+	padding-left: 5px;
+	grid-area: 5 / 1 / 10 / 1;
+	align-self: start;
 }
 .header__phone {
+	grid-area: 1 / 3 / 1 / 4;
 	display: grid;
 	grid-template-columns: 20% 80%;
 	grid-template-rows: repeat(5, 20%);
 }
-.header__phone-pic {
+.phone__pic {
 	background-image: url(../img/call.png);
 	grid-area: 2 / 1 / 4 / 2;
 }
-.header__phone-number {
+.phone__number {
 	color: #09c;
 	font-size: 26px;
 	grid-area: 2 / 2 / 4 / 3;
 }
-.header__phone-text {
+.phone__text {
 	grid-area: 4 / 1 / 5 / 3;
+}
+.header__call-back-btn {
+	grid-area: 1 / 4 / 1 / 5;
+	background-color: #fc0;
 }
 .header_call-back-text {
 	text-align: center;
@@ -115,7 +125,7 @@ body {
 .distrib {
 	z-index: 1;
 	width: 1335px;
-	margin-top: -65px;
+	margin-top: -50px;
 	
 	margin-left: 100px;
 	background-image: url(../img/banner.png);
