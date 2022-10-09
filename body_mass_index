@@ -1,0 +1,12 @@
+def body_mass_index(height, weight):
+    if '.' in str(height):
+        bmi = weight / height ** 2
+    else:
+        height = float(str(height)[0]+'.'+str(height)[1:])
+        bmi = weight / height ** 2
+    if 18 < bmi < 25:
+        print('You are okay')
+    elif 18 > bmi:
+        print('Eat more')
+    else:
+        print('Eat less')
